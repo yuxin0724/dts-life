@@ -8,16 +8,12 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link rel="icon" href="images/logo.png" />
+	<link rel="icon" href="images/dts-favicon.jpg" />
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Chewy&display=swap" rel="stylesheet"
 		type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-
-	<!-- Pet Demo Specific Stylesheet -->
-	<link rel="stylesheet" href="demos/pet/pet.css" type="text/css" />
-	<link rel="stylesheet" href="demos/pet/css/fonts.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
@@ -29,7 +25,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Nirvana</title>
+	<title>DTS Life Consultant Pte Ltd </title>
 
 	<style>
 		.menu-link:hover {
@@ -42,6 +38,16 @@
 
 		.m-font li {
 			font-size: 18px;
+		}
+		.fbox-bg.fbox-center{
+			border: 1px solid #886a0f;
+		}
+		.fbox-plain .fbox-icon i, .fbox-plain .fbox-icon img{
+			color: #0c4da2;
+			background-color: transparent
+		}
+		#logo img{
+			height: auto!important;
 		}
 	</style>
 
@@ -63,10 +69,7 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo">
-							<a href="index.html" class="standard-logo" data-dark-logo="images/logo.png"><img
-									src="images/logo.png" alt="Logo"></a>
-							<a href="index.html" class="retina-logo" data-dark-logo="images/logo.png"><img
-									src="images/logo.png" alt="Logo"></a>
+							<a href="#" data-scrollto="#slider"><img src="images/dts-life-consultant-logo.jpg" width="280px"></a>
 						</div><!-- #logo end -->
 
 						<div id="primary-menu-trigger">
@@ -94,8 +97,9 @@
 										data-scrollto="#services">
 										<div>Services</div>
 									</a></li>
-								<li class="menu-item"><a class="menu-link nott font-secondary" href="#">
-										<div>Projects</div>
+								<li class="menu-item"><a class="menu-link nott font-secondary" href="#"
+										data-scrollto="#project">
+										<div>Project</div>
 									</a></li>
 								<li class="menu-item"><a class="menu-link nott font-secondary" href="#"
 										data-scrollto="#contactus">
@@ -120,12 +124,9 @@
 				<div class="vertical-middle">
 					<div class="container py-5">
 						<div class="emphasis-title text-center dark m-0">
-							<h2
-								style="font-size: 40px; line-height: 1.4; font-weight: 600; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);">
-								Lorem Ipsum dolor Sit</h2><br>
-							<p class="font-weight-light d-none d-md-block" style="font-size: 16px;">Nisl blandit
-								adipisci gravida blandit soluta, explicabo orci, distinctio <br>duis unde provident
-								suspendisse orci? Recusandae! Proident,<br>quos do mi cupidatat.</p>
+							<h2 style="font-size: 40px; line-height: 1.4; font-weight: 600; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);letter-spacing: 0;">
+								DTS Life Consultant Pte Ltd</h2><br>
+							<p class="font-weight-light" style="font-size: 20px;">An appointed agency of Nirvana Memorial Garden Singapore</p>
 							<a href="#" data-scrollto="#services" class="button button-large button-rounded ml-0"
 								style="background-color: #0c4da2">View More</a>
 						</div>
@@ -140,72 +141,120 @@
 		<section id="content" style="overflow: hidden">
 			<div class="content-wrap pt-0 mb-0 pb-0 clearfix">
 
-				<div id="services" class="section m-0 clearfix" style="background-color: #eef2f5;">
+				<div id="services" class="section m-0 clearfix"
+					style="background-color: #eef2f5; background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255) 80%), url('images/package-img.png') no-repeat center center; background-size: cover;">
 					<div class="container clearfix">
-
 						<div class="heading-block center border-bottom-0 bottommargin topmargin-sm mx-auto"
 							style="max-width: 640px">
 							<h3 class="nott font-secondary font-weight-normal" style="font-size: 36px; color: #0c4da2">
-								Services</h3>
-							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore
-								consectetur dolorum, voluptatum possimus temporibus vel ab, nesciunt quod!</span>
+								Service</h3>
 						</div>
 
-						<div class="row clearfix">
+						<div class="row justify-content-center clearfix">
 							<!-- Features colomns
 							============================================= -->
-							<div class="row clearfix justify-content-center">
-								<div class="col-lg-5 col-md-6 bottommargin-sm">
-									<div class="feature-box media-box fbox-bg mx-2">
-										<div class="fbox-media">
-											<a href="#"><img
-													src="images/package-img.png"
-													alt="Package"></a>
-										</div>
-										<div class="fbox-content border-0">
-											<div class="row clearfix align-items-center">
-												<div class="col-lg-8">
-													<h2 class="nott ls0 font-secondary mb-0">Package A</h2>
-												</div>
-												<div class="col-lg-4 text-lg-right">
-													<h2 class="nott ls0 font-weight-semibold mb-0">$1,800</h2>
-												</div>
-												<div class="col-lg-12 text-lg-center">
-													<a href="#" data-toggle="modal" data-target="#packageADetails"
-														style="background-color: #0c4da2"
-														class="button button-large button-rounded topmargin-sm ml-0 nott ls0">See
-														More Details</a>
+							<div class="col-lg-8 p-lg-5 p-3 mx-2 shadow" style="
+							background: linear-gradient( to bottom left, rgba(255, 224, 54, .3), rgba(216, 220, 232, .5) 70% );
+							background-color: white; border-radius: 20px">
+								<div class="package-div m-font px-lg-4 px-0">
+									<div class="package-details ml-lg-5">
+										<p class="mb-3 font-weight-bold">1) Application for the exhumation service</p>
+										<p class="mb-2 font-weight-bold">2) Choosing on auspicious date and time for
+											conducting
+											exhumation</p>
+										<ul class="ml-5 mb-3">
+											<li>Ground-breaking ceremony</li>
+											<li>Exhumation of remains</li>
+											<li>Insertment of urn</li>
+										</ul>
+										<p class="mb-2 font-weight-bold">3) Chanting by monk / Taoist Priest (Twice)</p>
+										<ul class="ml-5 mb-3">
+											<li>Chanting on ground breaking ceremony</li>
+											<li>Chanting during the process of insertment of urn</li>
+										</ul>
+										<p class="mb-2 font-weight-bold">4) Offerings (2 sets)</p>
+										<ul class="ml-5 mb-3">
+											<li>For ground breaking and insertment of urn</li>
+										</ul>
+										<p class="mb-2 font-weight-bold">5) Tomb Knocking</p>
+										<ul class="ml-5 mb-3">
+											<li>Plague Knocking</li>
+											<li>Excavate</li>
+											<li>Sealed Earth</li>
+											<li>Clearing of tomb stones</li>
+										</ul>
+										<p class="mb-2 font-weight-bold">6) Ancestor Exhumation</p>
+										<ul class="ml-5 mb-3">
+											<li>Exhumation</li>
+											<li>Cleanse of bones</li>
+											<li>Cremation</li>
+										</ul>
+										<p class="mb-2 font-weight-bold">7) Lin Shan columbarium yInsertment </p>
+										<ul class="ml-5 mb-3">
+											<li>Dharani blanket</li>
+											<li>Liu Li ingots</li>
+											<li>Mingsha</li>
+										</ul>
+									</div>
+									<!-- Remarks -->
+									<p class="mb-2 text-center mt-5" style="color: #3f51b5"><b>Remarks: </b>There will
+										be a
+										consultant to guide you during the process.</p>
+
+									<div class="row justify-content-center mt-3">
+										<div class="col-md-6 col-lg-8">
+											<div class="promo promo-border promo-mini p-3 bg-white">
+												<div class="row align-items-center">
+													<div class="col-12 text-center">
+														<h3 class="mb-0 font-weight-normal">Price</h3>
+													</div>
+													<div class="col-12 text-center">
+														<h2 class="mb-0 color">$1,800 - $2,600</h2>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
+									<p class="text-center mt-2 text-danger">If whole body found, additional casket fee
+										of $800
+										will be imposed</p>
 								</div>
 
-								<div class="col-lg-5 col-md-6 bottommargin-sm">
-									<div class="feature-box media-box fbox-bg mx-2">
-										<div class="fbox-media">
-											<a href="#"><img
-													src="images/package-img.png"
-													alt="Package"></a>
-										</div>
-										<div class="fbox-content border-0">
-											<div class="row clearfix align-items-center">
-												<div class="col-lg-8">
-													<h2 class="nott ls0 font-secondary mb-0">Package B</h2>
-												</div>
-												<div class="col-lg-4 text-lg-right">
-													<h2 class="nott ls0 font-weight-semibold mb-0">$2,600</h2>
-												</div>
-												<div class="col-lg-12 text-lg-center">
-													<a data-toggle="modal" data-target="#packageBDetails"
-														style="background-color: #0c4da2"
-														class="button button-large button-rounded topmargin-sm ml-0 nott ls0">See
-														More Details</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="project" class="section mt-0 mb-0 clearfix"
+				style="background: linear-gradient(rgb(255, 255, 255) 60%, rgba(255,255,255,.4)), url('images/mountain-bg.jpg') no-repeat center center; background-size: cover">
+				<div class="heading-block center border-bottom-0 mb-0 mx-auto" style="max-width: 640px">
+					<h3 class="nott font-secondary font-weight-normal" style="font-size: 36px; color: #0c4da2">Project
+					</h3>
+				</div>
+				<div class="container mt-5 pt-lg-3">
+					<div class="row align-items-center justify-content-lg-between justify-content-center">
+						<div class="col-lg-6">
+							<img src="images/exhumation-graves-img.png" class="border">
+						</div>
+						<div class="col-lg-6 justify-content-lg-end justify-content-center text-center text-lg-left">
+							<div class="heading-block border-bottom-0 mb-0">
+								<h2 class="text-capitalize font-weight-semibold mb-2 mt-5 mt-lg-0"
+									style="font-size: 20px; letter-spacing: -1px"> NEW EXHUMATION PHASE FOR GRAVES AT
+									BLOCKS 3A,
+									3B, 3C, 3D, 3E, 14E, 14F, 14G, 17, 18 AND 19 WITHIN THE CHOA
+									CHU KANG CHINESE CEMETERY</h2>
+								<p class="mb-3">In 1998, the Government announced the burial period for all graves
+									within Choa Chu Kang (CCK) Cemetery would be limited to 15 years to ensure the sustainability of
+									cemetery land use. Hence, graves that are 15 years or older would be progressively
+									exhumed over time to free up land to allow development of new burial plots. Since
+									2004, CCK graves have been progressively exhumed, in phases.</p>
+								<p class="mb-2">The affected graves under CCK Phase 9 exhumation programme are located at 
+									BLOCKS 3A, 3B, 3C, 3D, 3E, 14E, 14F, 14G, 17, 18 and 19 within the CCK Chinese 
+									Cemetery (please refer to location map).</p>
+								<a href="download/notice-of-exhumation-for-cck-phase-9.pdf" target="_blank"  class="button button-large button-rounded ml-0 mt-3 text-lg-left text-center"
+									style="background-color: #0c4da2">View More Details</a>
 							</div>
 						</div>
 					</div>
@@ -213,59 +262,47 @@
 			</div>
 
 			<div id="contactus" class="section mt-0 mb-0 clearfix"
-				style="background: linear-gradient(rgb(255, 255, 255), rgba(255,255,255,.9)), url('images/contact-bg.jpg') no-repeat center center; background-size: cover">
+			style="background: #FFF">
 				<div class="heading-block center border-bottom-0 mb-0 mx-auto" style="max-width: 640px">
 					<h3 class="nott font-secondary font-weight-normal" style="font-size: 36px;color: #0c4da2">Contact Us
 					</h3>
-					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur
-						dolorum, voluptatum possimus temporibus vel.</span>
+					<span>Curious about our services or products? <br> Contact us, and we'll be happy to provide more details.</span>
 				</div>
 				<div class="container mt-5 pt-lg-3">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="col-md-12 px-4 mb-5">
-								<h4 class="fw-medium mb-4"><i class="icon-line-phone"></i> Call Us</h4>
-								<p class="mb-3">
-									+0123456789</p>
+					<div class="w-100">
+
+						<div class="row col-mb-50 justify-content-center">
+							<div class="col-sm-6 col-lg-3">
+								<div class="feature-box fbox-center fbox-bg fbox-plain">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-phone3"></i></a>
+									</div>
+									<div class="fbox-content">
+										<h3>Call / Whatsapp Us<span class="subtitle">(+65) 85004104</span></h3>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-12 px-4 mb-5">
-								<h4 class="fw-medium mb-4"><i class="icon-line-mail"></i> Email Us</h4>
-								<p class="mb-3">
-									emailaddress@gmail.com</p>
+
+							<div class="col-sm-6 col-lg-3">
+								<div class="feature-box fbox-center fbox-bg fbox-plain">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-email"></i></a>
+									</div>
+									<div class="fbox-content">
+										<h3>Email Us<span class="subtitle"><a href="mailto:eric_ping512@hotmail.com" style="color: #0c4da2">eric_ping512@hotmail.com</a></span></h3>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="row">
-								<div class="col-md-6 px-4 mb-5">
-									<h4 class="fw-medium mb-4"><i class="icon-location"></i> WISMA NIRVANA</h4>
-									<p class="mb-3">
-										No. 1, Jalan 1/116A, Off Jalan Sungai Besi,
-										57100 Kuala Lumpur, Malaysia</p>
-								</div>
-								<div class="col-md-6 px-4 mb-5">
-									<h4 class="fw-medium mb-4"><i class="icon-location"></i> NIRVANA MEMORIAL PARK, SHAH
-										ALAM</h4>
-									<p class="mb-3">
-										Tmn Perkuburan Seksyen 21,Jalan Pusaka 21/1,Off Persiaran Jubli Perak,40300 Shah
-										Alam.</p>
-								</div>
-								<div class="col-md-6 px-4 mb-5">
-									<h4 class="fw-medium mb-4"><i class="icon-location"></i> NIRVANA MEMORIAL GARDEN,
-										SEMENYIH</h4>
-									<p class="mb-3">
-										Lot 1170, Jalan Sg Lalang,Batu 30, 43500 Semenyih,Selangor Darul Ehsan.</p>
-								</div>
-								<div class="col-md-6 px-4 mb-5">
-									<h4 class="fw-medium mb-4"><i class="icon-location"></i> NIRVANA CENTER KL (NIRVANA
-										2)</h4>
-									<p class="mb-3">
-										Lot 568, Jalan Dewan Bahasa,50460 Kuala Lumpur, Malaysia.</p>
-								</div>
-								<div class="col-md-6 px-4 mb-5">
-									<h4 class="fw-medium mb-4"><i class="icon-location"></i> NIRVANA MEMORIAL PARK,
-										SEMENYIH</h4>
-									<p class="mb-3">
-										Batu 6, Jalan Kachau,43500 Semenyih,Selangor Darul Ehsan.</p>
+
+							<div class="col-sm-12 col-lg-6">
+								<div class="feature-box fbox-center fbox-bg fbox-plain">
+									<div class="fbox-icon">
+										<a href="#"><i class="icon-map-marker2"></i></a>
+									</div>
+									<div class="fbox-content">
+										<h3>Location<span class="subtitle">21, WOODLANDS CLOSE, #02-04, 
+											PRIMZ BIZHUB, SINGAPORE 737854</span></h3>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -290,7 +327,7 @@
 
 				<div class="row justify-content-center align-items-center col-mb-30">
 					<div class="col-12 col-lg-auto text-center text-lg-left">
-						Copyrights &copy; 2024 All Rights Reserved by Nirvana.
+						Copyrights &copy; 2024 All Rights Reserved by DTS Life Consultant Pte Ltd.
 					</div>
 				</div>
 
@@ -303,159 +340,6 @@
 	<!-- Go To Top
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
-
-	<!-- Package modal -->
-	<div id="packageADetails" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-body">
-				<div class="modal-content" style="
-				background: linear-gradient( to bottom left, rgba(255, 224, 54, .3), rgba(216, 220, 232, .5) 70% );
-				background-color: white;">
-					<div class="modal-header py-0 border-0 pt-2">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-					<div class="modal-body m-font px-4">
-						<div class="col-lg-12 justify-content-center text-center">
-							<img src="images/logo.png" width="200px" style="margin-top: -20px">
-							<h2 class="modal-title text-center mt-2 mb-5">Package A</h2>
-						</div>
-						<p class="mb-3 font-weight-bold">1) Application for the exhumation service</p>
-						<p class="mb-2 font-weight-bold">2) Choosing on auspicious date and time for conducting
-							exhumation</p>
-						<ul class="ml-5 mb-3">
-							<li>Ground-breaking ceremony</li>
-							<li>Exhumation of remains</li>
-							<li>Insertment of urn</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">3) Chanting by monk / Taoist Priest (Twice)</p>
-						<ul class="ml-5 mb-3">
-							<li>Chanting on ground breaking ceremony</li>
-							<li>Chanting during the process of insertment of urn</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">4) Offerings (2 sets)</p>
-						<ul class="ml-5 mb-3">
-							<li>For ground breaking and insertment of urn</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">5) Tomb Knocking</p>
-						<ul class="ml-5 mb-3">
-							<li>Plague Knocking</li>
-							<li>Excavate</li>
-							<li>Sealed Earth</li>
-							<li>Clearing of tomb stones</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">6) Ancestor Exhumation</p>
-						<ul class="ml-5 mb-3">
-							<li>Exhumation</li>
-							<li>Cleanse of bones</li>
-							<li>Cremation</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">7) Lin Shan columbarium yInsertment </p>
-						<ul class="ml-5 mb-3">
-							<li>Dharani blanket</li>
-							<li>Liu Li ingots</li>
-							<li>Mingsha</li>
-						</ul>
-						<p class="mb-2 text-center mt-5" style="color: #3f51b5"><b>Remarks: </b>There will be a
-							consultant to guide you during the process.</p>
-
-						<div class="row justify-content-center mt-3">
-							<div class="col-md-6 col-lg-8">
-								<div class="promo promo-border promo-mini p-3 bg-white">
-									<div class="row align-items-center">
-										<div class="col-12 text-center">
-											<h3 class="mb-0 font-weight-normal">Price</h3>
-										</div>
-										<div class="col-12 text-center">
-											<h2 class="mb-0 color">$1,800</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<p class="text-center mt-2 text-danger">If whole body found, additional casket fee of $800
-							will be imposed</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="packageBDetails" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-body">
-				<div class="modal-content" style="
-				background: linear-gradient( to bottom left, rgba(255, 224, 54, .3), rgba(216, 220, 232, .5) 70% );
-				background-color: white;">
-					<div class="modal-header py-0 border-0 pt-2">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-					<div class="modal-body m-font px-4">
-						<div class="col-lg-12 justify-content-center text-center">
-							<img src="images/logo.png" width="200px" style="margin-top: -20px">
-							<h2 class="modal-title text-center mt-2 mb-5">Package B</h2>
-						</div>
-						<p class="mb-3 font-weight-bold">1) Application for the exhumation service</p>
-						<p class="mb-2 font-weight-bold">2) Choosing on auspicious date and time for conducting
-							exhumation</p>
-						<ul class="ml-5 mb-3">
-							<li>Ground-breaking ceremony</li>
-							<li>Exhumation of remains</li>
-							<li>Insertment of urn</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">3) Chanting by monk / Taoist Priest (Twice)</p>
-						<ul class="ml-5 mb-3">
-							<li>Chanting on ground breaking ceremony</li>
-							<li>Chanting during the process of insertment of urn</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">4) Offerings (2 sets)</p>
-						<ul class="ml-5 mb-3">
-							<li>For ground breaking and insertment of urn</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">5) Tomb Knocking</p>
-						<ul class="ml-5 mb-3">
-							<li>Plague Knocking</li>
-							<li>Excavate</li>
-							<li>Sealed Earth</li>
-							<li>Clearing of tomb stones</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">6) Ancestor Exhumation</p>
-						<ul class="ml-5 mb-3">
-							<li>Exhumation</li>
-							<li>Cleanse of bones</li>
-							<li>Cremation</li>
-						</ul>
-						<p class="mb-2 font-weight-bold">7) Lin Shan columbarium yInsertment </p>
-						<ul class="ml-5 mb-3">
-							<li>Dharani blanket</li>
-							<li>Liu Li ingots</li>
-							<li>Mingsha</li>
-						</ul>
-						<p class="mb-2 text-center mt-5" style="color: #3f51b5"><b>Remarks: </b>There will be a
-							consultant to guide you during the process.</p>
-
-						<div class="row justify-content-center mt-3">
-							<div class="col-md-6 col-lg-8">
-								<div class="promo promo-border promo-mini p-3 bg-white">
-									<div class="row align-items-center">
-										<div class="col-12 text-center">
-											<h3 class="mb-0 font-weight-normal">Price</h3>
-										</div>
-										<div class="col-12 text-center">
-											<h2 class="mb-0 color">$2,600</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<p class="text-center mt-2 text-danger">If whole body found, additional casket fee of $800
-							will be imposed</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- JavaScripts
 	============================================= -->
