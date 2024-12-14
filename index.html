@@ -9,8 +9,7 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link rel="icon" href="images/dts-favicon.jpg" />
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Chewy&display=swap" rel="stylesheet"
-		type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
@@ -53,6 +52,33 @@
 		#logo img {
 			height: auto !important;
 		}
+		.nav-link {
+			font-size: 25px!important;
+			color: #333;
+			width: 200px;
+			text-align: center;
+		}
+		.nav-link.active{
+			color: #0c4da2!important;
+			border-bottom: 2px solid #0c4da2;
+		}
+		.owl-carousel .owl-dots .owl-dot{
+			border: 2px solid white;
+			background-color: transparent;
+			width: 15px;
+			height: 15px;
+			opacity: 1!important;
+		}
+		.owl-carousel .owl-dots .owl-dot.active{
+			background-color: white!important;
+			opacity: 1!important;
+		}
+		.owl-carousel .owl-nav [class*=owl-]:hover{
+			background-color: #0c4da2!important;
+		}
+		.font-secondary{
+			font-family: "Prata", serif;
+		}
 	</style>
 
 </head>
@@ -72,8 +98,8 @@
 
 						<!-- Logo
 						============================================= -->
-						<div id="logo">
-							<a href="#" data-scrollto="#slider"><img src="images/dts-life-consultant-logo.jpg"
+						<div id="logo" class="my-2">
+							<a href="#" data-scrollto="#slider"><img src="images/dts-logo.jpg"
 									width="280px"></a>
 						</div><!-- #logo end -->
 
@@ -132,8 +158,6 @@
 							<h2
 								style="font-size: 40px; line-height: 1.4; font-weight: 600; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);letter-spacing: 0;">
 								DTS Life Consultant Pte Ltd</h2><br>
-							<p class="font-weight-light" style="font-size: 20px;">An appointed agency of Nirvana
-								Memorial Garden Singapore</p>
 							<a href="#" data-scrollto="#services" class="button button-large button-rounded ml-0"
 								style="background-color: #0c4da2">View More</a>
 						</div>
@@ -153,35 +177,31 @@
 					<div class="container clearfix">
 						<div class="heading-block center border-bottom-0 bottommargin topmargin-sm mx-auto"
 							style="max-width: 640px">
-							<h3 class="nott font-secondary font-weight-normal" style="font-size: 36px; color: #0c4da2">
-								Service</h3>
+							<h3 class="nott ls-0 font-secondary font-weight-semibold" style="font-size: 36px; color: #0c4da2">
+								Grave Exhumation Service</h3>
+							<h3 class="nott ls-0 font-secondary font-weight-semibold" style="font-size: 36px; color: #0c4da2">
+								墓⽳迁移与开掘服务</h3>
 						</div>
 
 						<div class="row justify-content-center clearfix">
-							<div class="col-lg-8">
-								<div class="accordion" data-collapsible="true" style="
-							background: linear-gradient( to bottom left, rgba(255, 224, 54, .3), rgba(216, 220, 232, .5) 70% );
-							background-color: white; border-radius: 20px">
-									<div class="accordion-header py-lg-4 pt-4 pb-0">
-										<div class="accordion-title text-center p-lg-3">
-											<h3 class="mb-0">Package Details</h3>
-										</div>
-										<div class="accordion-icon d-flex align-items-center position-relative"
-											style="right: 20px">
-											<i class="accordion-closed icon-line-circle-plus"
-												style="font-size: 1.2rem"></i>
-											<i class="accordion-open icon-line-circle-minus"
-												style="font-size: 1.2rem"></i>
-										</div>
-									</div>
-									<div class="accordion-content pt-lg-0 pt-4 px-lg-5 px-3">
-										<div class="package-div m-font">
+							
+							<div class="col-lg-12">
+								<div class="nav justify-content-center" role="tablist">
+									<a class="nav-link active" data-toggle="tab" href="#english" role="tab" aria-controls="english-tab" aria-selected="true" data-bg="#D6EBEE">English</a>
+									<a class="nav-link" data-toggle="tab" href="#chinese" role="tab" aria-controls="chinese-tab" aria-selected="false" data-bg="#E4E4E4">中文</a>
+								</div>
+							</div>
+							<!-- English -->
+							<div class="tab-content col-lg-8 mt-5 mb-5">
+								<div class="tab-pane show active" id="english" role="tabpanel" aria-labelledby="studio-lobby-tab">
+									<div class="row mx-0 justify-content-center p-4 pt-5" style="
+									background: linear-gradient( to bottom left, rgba(255, 224, 54, .3), rgba(216, 220, 232, .5) 70% );
+									background-color: white; border-radius: 20px">
+										<div class="package-div row m-font justify-content-center col-lg-12">
 											<div class="package-details">
 												<p class="mb-3 font-weight-bold">1) Application for the exhumation
 													service</p>
-												<p class="mb-2 font-weight-bold">2) Choosing on auspicious date and time
-													for
-													conducting
+												<p class="mb-2 font-weight-bold">2) Choosing on auspicious date and time for conducting
 													exhumation</p>
 												<ul class="ml-5 mb-3">
 													<li>Ground-breaking ceremony</li>
@@ -211,7 +231,7 @@
 													<li>Cleanse of bones</li>
 													<li>Cremation</li>
 												</ul>
-												<p class="mb-2 font-weight-bold">7) Lin Shan columbarium yInsertment
+												<p class="mb-2 font-weight-bold">7) Columbarium Insertment
 												</p>
 												<ul class="ml-5 mb-3">
 													<li>Dharani blanket</li>
@@ -225,41 +245,32 @@
 												be a
 												consultant to guide you during the process.</p>
 
-											<div class="row justify-content-center mt-3">
-												<div class="col-md-6 col-lg-8">
+											<div class="row w-100 justify-content-center mt-3">
+												<div class="col-md-6 col-lg-12">
 													<div class="promo promo-border promo-mini p-3 bg-white">
 														<div class="row align-items-center">
 															<div class="col-12 text-center">
 																<h3 class="mb-0 font-weight-normal">Price</h3>
 															</div>
 															<div class="col-12 text-center">
-																<h2 class="mb-0 color">$1,800 - $2,600</h2>
+																<h2 class="mb-0 color">$1,800 - $3,388</h2>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<p class="text-center mt-2 text-danger">If whole body found, additional
-												casket fee
-												of $800
-												will be imposed</p>
+											<p class="text-center mt-2 text-danger">If whole body found, additional casket fee
+												of $800 will be imposed</p>
 										</div>
 									</div>
-									<hr>
-									<!-- 中文 -->
-									<div class="accordion-header py-lg-4 pt-0 pb-4 border-0">
-										<div class="accordion-title text-center">
-											<h3 class="mb-0">配套内容</h3>
-										</div>
-										<div class="accordion-icon position-relative" style="right: 20px">
-											<i class="accordion-closed icon-line-circle-plus"
-												style="font-size: 1.2rem"></i>
-											<i class="accordion-open icon-line-circle-minus"
-												style="font-size: 1.2rem"></i>
-										</div>
-									</div>
-									<div class="accordion-content px-lg-5 px-3">
-										<div class="package-div m-font">
+								</div>
+								
+								<!-- 中文 -->
+								<div class="tab-pane" id="chinese" role="tabpanel" aria-labelledby="chinese-tab">
+									 <div class="row mx-0 justify-content-center p-4 pt-5" style="
+									 background: linear-gradient( to bottom left, rgba(255, 224, 54, .3), rgba(216, 220, 232, .5) 70% );
+									 background-color: white; border-radius: 20px">
+										<div class="package-div row mx-0 justify-content-center col-lg-10 m-font">
 											<div class="package-details">
 												<p class="mb-3 font-weight-bold">1) 申请掘墓服务</p>
 												<p class="mb-2 font-weight-bold">2) 选择吉日吉时进行掘墓</p>
@@ -298,11 +309,11 @@
 												</ul>
 											</div>
 											<!-- 备注 -->
-											<p class="mb-2 text-center mt-5" style="color: #3f51b5">
+											<p class="mb-2 w-100 text-center mt-5" style="color: #3f51b5">
 												<b>备注：</b>整个过程中将有顾问为您提供指导。</p>
 
-											<div class="row justify-content-center mt-3">
-												<div class="col-md-6 col-lg-8">
+											<div class="row w-100 justify-content-center mt-3">
+												<div class="col-md-6 col-lg-12">
 													<div class="promo promo-border promo-mini p-3 bg-white">
 														<div class="row align-items-center">
 															<div class="col-12 text-center">
@@ -315,9 +326,9 @@
 													</div>
 												</div>
 											</div>
-											<p class="text-center mt-2 text-danger">若发现完整尸体，将额外收取$800的棺材费用</p>
+											<p class="text-center mt-2 text-danger w-100">若发现完整尸体，将额外收取$800的棺材费用</p>
 										</div>
-									</div>
+									 </div>
 								</div>
 							</div>
 						</div>
@@ -329,34 +340,69 @@
 			<div id="project" class="section mt-0 mb-0 clearfix"
 				style="background: linear-gradient(rgb(255, 255, 255) 60%, rgba(255,255,255,.4)), url('images/mountain-bg.jpg') no-repeat center center; background-size: cover">
 				<div class="heading-block center border-bottom-0 mb-0 mx-auto" style="max-width: 640px">
-					<h3 class="nott font-secondary font-weight-normal" style="font-size: 36px; color: #0c4da2">Project
+					<h3 class="nott font-secondary font-weight-semibold" style="font-size: 36px; color: #0c4da2">Project
 					</h3>
 				</div>
 				<div class="container mt-5 pt-lg-3">
 					<div class="row align-items-center justify-content-lg-between justify-content-center">
-						<div class="col-lg-6">
-							<img src="images/exhumation-graves-img.png" class="border">
-						</div>
-						<div class="col-lg-6 justify-content-lg-end justify-content-center text-center text-lg-left">
-							<div class="heading-block border-bottom-0 mb-0">
-								<h2 class="text-capitalize font-weight-semibold mb-2 mt-5 mt-lg-0"
-									style="font-size: 20px; letter-spacing: -1px"> NEW EXHUMATION PHASE FOR GRAVES AT
-									BLOCKS 3A,
-									3B, 3C, 3D, 3E, 14E, 14F, 14G, 17, 18 AND 19 WITHIN THE CHOA
-									CHU KANG CHINESE CEMETERY</h2>
-								<p class="mb-3">In 1998, the Government announced the burial period for all graves
-									within Choa Chu Kang (CCK) Cemetery would be limited to 15 years to ensure the
-									sustainability of
-									cemetery land use. Hence, graves that are 15 years or older would be progressively
-									exhumed over time to free up land to allow development of new burial plots. Since
-									2004, CCK graves have been progressively exhumed, in phases.</p>
-								<p class="mb-2">The affected graves under CCK Phase 9 exhumation programme are located
-									at
-									BLOCKS 3A, 3B, 3C, 3D, 3E, 14E, 14F, 14G, 17, 18 and 19 within the CCK Chinese
-									Cemetery (please refer to location map).</p>
-								<a href="download/notice-of-exhumation-for-cck-phase-9.pdf" target="_blank"
-									class="button button-large button-rounded ml-0 mt-3 text-lg-left text-center"
-									style="background-color: #0c4da2">View More Details</a>
+						<div id="projects" class="owl-carousel owl-carousel-full image-carousel carousel-widget customjs">
+							<div class="oc-item">
+								<div class="row cleafix">
+									<div class="col-lg-6">
+										<img src="images/exhumation-graves-img.png" class="border">
+									</div>
+									<div class="col-lg-6 justify-content-lg-end justify-content-center text-center text-lg-left">
+										<div class="heading-block border-bottom-0 mb-0">
+											<h2 class="text-capitalize font-weight-semibold mb-2 mt-5 mt-lg-0"
+												style="font-size: 20px; letter-spacing: -1px"> NEW EXHUMATION PHASE FOR GRAVES AT
+												BLOCKS 3A,
+												3B, 3C, 3D, 3E, 14E, 14F, 14G, 17, 18 AND 19 WITHIN THE CHOA
+												CHU KANG CHINESE CEMETERY</h2>
+											<p class="mb-3">In 1998, the Government announced the burial period for all graves
+												within Choa Chu Kang (CCK) Cemetery would be limited to 15 years to ensure the
+												sustainability of
+												cemetery land use. Hence, graves that are 15 years or older would be progressively
+												exhumed over time to free up land to allow development of new burial plots. Since
+												2004, CCK graves have been progressively exhumed, in phases.</p>
+											<p class="mb-2">The affected graves under CCK Phase 9 exhumation programme are located
+												at
+												BLOCKS 3A, 3B, 3C, 3D, 3E, 14E, 14F, 14G, 17, 18 and 19 within the CCK Chinese
+												Cemetery (please refer to location map).</p>
+											<a href="download/notice-of-exhumation-for-cck-phase-9.pdf" target="_blank"
+												class="button button-large button-rounded ml-0 mt-3 text-lg-left text-center"
+												style="background-color: #0c4da2">View More Details</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item">
+								<div class="row cleafix">
+									<div class="col-lg-6">
+										<img src="images/exhumation-graves-img.png" class="border">
+									</div>
+									<div class="col-lg-6 justify-content-lg-end justify-content-center text-center text-lg-left">
+										<div class="heading-block border-bottom-0 mb-0">
+											<h2 class="text-capitalize font-weight-semibold mb-2 mt-5 mt-lg-0"
+												style="font-size: 20px; letter-spacing: -1px"> NEW EXHUMATION PHASE FOR GRAVES AT
+												BLOCKS 3A,
+												3B, 3C, 3D, 3E, 14E, 14F, 14G, 17, 18 AND 19 WITHIN THE CHOA
+												CHU KANG CHINESE CEMETERY</h2>
+											<p class="mb-3">In 1998, the Government announced the burial period for all graves
+												within Choa Chu Kang (CCK) Cemetery would be limited to 15 years to ensure the
+												sustainability of
+												cemetery land use. Hence, graves that are 15 years or older would be progressively
+												exhumed over time to free up land to allow development of new burial plots. Since
+												2004, CCK graves have been progressively exhumed, in phases.</p>
+											<p class="mb-2">The affected graves under CCK Phase 9 exhumation programme are located
+												at
+												BLOCKS 3A, 3B, 3C, 3D, 3E, 14E, 14F, 14G, 17, 18 and 19 within the CCK Chinese
+												Cemetery (please refer to location map).</p>
+											<a href="download/notice-of-exhumation-for-cck-phase-9.pdf" target="_blank"
+												class="button button-large button-rounded ml-0 mt-3 text-lg-left text-center"
+												style="background-color: #0c4da2">View More Details</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -365,7 +411,7 @@
 
 			<div id="contactus" class="section mt-0 mb-0 clearfix" style="background: #FFF">
 				<div class="heading-block center border-bottom-0 mb-0 mx-auto" style="max-width: 640px">
-					<h3 class="nott font-secondary font-weight-normal" style="font-size: 36px;color: #0c4da2">Contact Us
+					<h3 class="nott font-secondary font-weight-semibold" style="font-size: 36px;color: #0c4da2">Contact Us
 					</h3>
 					<span>Curious about our services or products? <br> Contact us, and we'll be happy to provide more
 						details.</span>
@@ -374,7 +420,7 @@
 					<div class="w-100">
 
 						<div class="row col-mb-50 justify-content-center">
-							<div class="col-sm-6 col-lg-3">
+							<div class="col-sm-6 col-lg-6">
 								<div class="feature-box fbox-center fbox-bg fbox-plain">
 									<div class="fbox-icon">
 										<a href="#"><i class="icon-phone3"></i></a>
@@ -385,26 +431,25 @@
 								</div>
 							</div>
 
-							<div class="col-sm-6 col-lg-3">
+							<div class="col-sm-6 col-lg-6">
 								<div class="feature-box fbox-center fbox-bg fbox-plain">
 									<div class="fbox-icon">
 										<a href="#"><i class="icon-email"></i></a>
 									</div>
 									<div class="fbox-content">
-										<h3>Email Us<span class="subtitle"><a href="mailto:eric_ping512@hotmail.com"
-													style="color: #0c4da2">eric_ping512@hotmail.com</a></span></h3>
+										<h3>Email Us<span class="subtitle"><a href="mailto:eric_ping521@hotmail.com"
+													style="color: #0c4da2">eric_ping521@hotmail.com</a></span></h3>
 									</div>
 								</div>
 							</div>
 
-							<div class="col-sm-12 col-lg-6">
+							<div class="col-sm-12 col-lg-12">
 								<div class="feature-box fbox-center fbox-bg fbox-plain">
 									<div class="fbox-icon">
 										<a href="#"><i class="icon-map-marker2"></i></a>
 									</div>
 									<div class="fbox-content">
-										<h3>Location<span class="subtitle">21, WOODLANDS CLOSE, #02-04,
-												PRIMZ BIZHUB, SINGAPORE 737854</span></h3>
+										<h3>Location<span class="subtitle">100, Jalan Sultan, #08-08 Sultan Plaza, 199001</span></h3>
 									</div>
 								</div>
 							</div>
@@ -452,6 +497,23 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+	<script>
+		jQuery(window).on( 'pluginCarouselReady', function(){
+			$('#projects').owlCarousel({
+				items: 1,
+				margin: 60,
+			    nav: true,
+			    navText: ['<i class="icon-line-arrow-left"></i>','<i class="icon-line-arrow-right"></i>'],
+			    dots: true,
+			    stagePadding: 30,
+			    responsive:{
+					768: { items: 2 },
+					1200: { stagePadding: 200 }
+				},
+			});
+		});
+	</script>
 
 </body>
 
